@@ -1,0 +1,240 @@
+page {
+  background: #f2f2f2;
+}
+
+.main {
+  margin: 20rpx;
+  background: white;
+  border-radius: 10rpx;
+}
+
+.title {
+  color: #666;
+  font-size: 24rpx;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10rpx;
+}
+
+.textarea {
+  padding: 10rpx;
+  font-size: 24rpx;
+}
+
+.heading {
+  font-size: 38rpx;
+  text-align: center;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 10rpx;
+  margin-bottom: 30rpx;
+}
+
+.pic image {
+  width: 100%;
+  height: auto;
+}
+
+textarea {
+  width: 100%;
+  color: #666;
+  font-size: 32rpx;
+  padding-bottom: 10rpx;
+}
+
+.choice {
+  padding: 20rpx;
+  border-top: 10rpx solid #f2f2f2;
+}
+
+.selc {
+  width: 150rpx;
+  height: 60rpx;
+}
+
+.choice .addpic {
+  width: 150rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  float: left;
+  margin-left: 200rpx;
+  font-family: '黑体';
+}
+
+.choice .addpic image {
+  width: 50rpx;
+}
+
+.choice .addtitle {
+  width: 150rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  float: left;
+  font-family: '黑体';
+}
+
+.choice .addtitle image {
+  width: 50rpx;
+}
+
+.null {
+  height: 120rpx;
+  background: #f2f2f2;
+}
+
+.submit {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+/*颜色选择*/
+
+.submitview {
+  z-index: 999;
+}
+
+.modals {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modals-cancel {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-dialog-body {
+  position: absolute;
+  border-radius: 10rpx;
+  z-index: 10001;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30rpx;
+  height: 300rpx;
+  background-color: #fff;
+}
+
+/*动画前初始位置*/
+
+.bottom-pos {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.pic {
+  position: relative;
+}
+
+.del {
+  position: absolute;
+  top: 20rpx;
+  right: 0rpx;
+  color: white;
+  font-size: 28rpx;
+  display: inline-block;
+  padding: 10rpx;
+  border-radius: 10rpx;
+}
+
+.del image {
+  width: 80rpx;
+  border-radius: 7rpx;
+}
+
+.modals text {
+  display: inline-block;
+  color: #666;
+}
+
+.selector {
+  margin-top: 30rpx;
+}
+
+.color {
+  width: 60rpx;
+  height: 60rpx;
+  float: left;
+  margin: 30rpx 20rpx;
+  border-radius: 50%;
+}
+
+.co0 {
+  background: #666;
+}
+
+.co1 {
+  background: #ccc;
+}
+
+.co2 {
+  background: #000;
+}
+
+.co3 {
+  background: #ffc000;
+}
+
+.co4 {
+  background: #ff5722;
+}
+
+.co5 {
+  background: #c00000;
+}
+
+.co6 {
+  background: #f00;
+}
+
+.co7 {
+  background: #008000;
+}
+
+.co8 {
+  background: #00b050;
+}
+
+.co9 {
+  background: #92d050;
+}
+
+.co10 {
+  background: #002060;
+}
+
+.co11 {
+  background: #0070c0;
+}
+
+.co12 {
+  background: #00b0f0;
+}
+
+.co13 {
+  background: #7030a0;
+}
+
+/*颜色选择END*/

@@ -1,0 +1,70 @@
+<form bindsubmit='formsubmit'>
+  <view class='main'>
+    <input class='title' name="title" placeholder="请输入资讯标题" value=''bindblur="bindtitle2"></input>
+    <view class='border'>
+      <textarea placeholder="请输入" class='textarea' auto-height='true' bindblur="initialization" name="describe" maxlength="100000" value='{{initialization}}' />
+      <block wx:for="{{controller}}" wx:for-item="item" wx:key="index">
+        <view class='pic'>
+          <image src="{{item.pic}}" mode="widthFix"></image>
+          <!-- <view class='del' bindtap='del' data-index="{{index}}">
+            <image mode="widthFix" src='/Share/image/delete.png'></image>
+          </view> -->
+        </view>
+        <view class='row'>
+
+          <textarea placeholder="请输入" auto-height='true' class='textarea' focus wx:if="{{show}}" bindfocus="bintext" bindblur="bindblur" data-index="{{index}}" name="title{{index}}" value='{{item.text}}' />
+
+        </view>
+        <input name="titles{{index}}" placeholder="请输入标题" class='heading' bindblur="bindtitle" style='display:{{item.display}};color:{{item.color}}'></input>
+      <textarea placeholder="请输入" data-index="{{index}}" bindfocus="bintext" bindblur="bindblur2" name="text2{{index}}" value='{{item.text2}}'auto-height='true' class='textarea' focus style='display:{{item.display}}' />
+      </block>
+
+
+      <view class='choice'>
+        <view class="addpic" bindtap='bintitle'>
+          <view class='selc'>
+            <image mode="widthFix" src='/Share/image/title.png'></image>
+          </view>
+          <text>插入标题</text>
+        </view>
+        <view class='addtitle' bindtap='binpic'>
+          <view class='selc'>
+            <image mode="widthFix" src='/Share/image/pic.png'></image>
+          </view>
+          <text>插入图片</text>
+        </view>
+        <view class='clear'></view>
+      </view>
+    </view>
+    <view class='null'></view>
+
+
+
+  </view>
+  <view class="modals modals-bottom-dialog" hidden="{{hideModal}}">
+    <view class="modals-cancel" bindtap="hideModal"></view>
+    <view class="bottom-dialog-body bottom-pos" animation="{{animationData}}">
+      <text>选择标题颜色，</text>
+      <text class='right' bindtap='bincolor' data-color="#666">默认</text>
+      <view class='clear'></view>
+      <view class='selector'>
+        <view class='color co0' bindtap='bincolor' data-color="#666"></view>
+        <view class='color co1' bindtap='bincolor' data-color="#ccc"></view>
+        <view class='color co2' bindtap='bincolor' data-color="#000"></view>
+        <view class='color co3' bindtap='bincolor' data-color="#ffc000"></view>
+        <view class='color co4' bindtap='bincolor' data-color="#ff5722"></view>
+        <view class='color co5' bindtap='bincolor' data-color="#c00000"></view>
+        <view class='color co6' bindtap='bincolor' data-color="#ff0000"></view>
+        <view class='color co7' bindtap='bincolor' data-color="#008000"></view>
+        <view class='color co8' bindtap='bincolor' data-color="#00b050"></view>
+        <view class='color co9' bindtap='bincolor' data-color="#92d050"></view>
+        <view class='color co10' bindtap='bincolor' data-color="#002060"></view>
+        <view class='color co11' bindtap='bincolor' data-color="#0070c0"></view>
+        <view class='color co12' bindtap='bincolor' data-color="#00b0f0"></view>
+        <view class='color co13' bindtap='bincolor' data-color="#7030a0"></view>
+        <view class='clear'></view>
+      </view>
+    </view>
+  </view>
+  <button class='submit' form-type='submit'>发布</button>
+</form>
